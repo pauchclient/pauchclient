@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВКонтакте | Новости проекта PouchClient</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation Header -->
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo">
+                <i class="fa-brands fa-vk"></i><span>pouch</span>
+            </a>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="header-btn" id="themeToggleBtn" title="Переключить тему">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            
+            <!-- User Status Info -->
+            <div class="user-profile-widget" id="userProfileWidget">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=60" alt="Avatar" class="user-avatar" id="headerAvatar">
+                <span class="user-name" id="headerUserName">Войти</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        
+        <!-- Left Navigation Sidebar -->
+        <aside class="sidebar">
+            <a href="#" class="sidebar-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Моя страница</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-regular fa-newspaper"></i>
+                <span>Новости</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-regular fa-message"></i>
+                <span>Сообщения</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-regular fa-user"></i>
+                <span>Друзья</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-regular fa-users"></i>
+                <span>Сообщества</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-regular fa-image"></i>
+                <span>Фотографии</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Настройки</span>
+            </a>
+        </aside>
+
+        <!-- Central News Feed Area -->
+        <main class="feed-area">
+            
+
+            <!-- Create Post Mock Card -->
+            <div class="card create-post-card">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=60" alt="User Avatar" class="user-avatar" id="createPostAvatar">
+                <div class="create-post-input" id="createPostInput">Что у вас нового?</div>
+            </div>
+
+            <!-- The Main Interactive Post Card -->
+            <article class="card">
+                
+                <!-- Post Header -->
+                <div class="post-header">
+                    <div class="post-author-info">
+                        <img src="https://images.unsplash.com/photo-1614680376593-902f74fa0d41?w=150&auto=format&fit=crop&q=60" alt="PouchClient Group" class="author-avatar">
+                        <div>
+                            <a href="#" class="author-name">PouchClient | Официальный Клиент <i class="fa-solid fa-circle-check verified-badge" title="Подтвержденное сообщество"></i></a>
+                            <div class="post-time">Сегодня в 14:15 • Доступно всем</div>
+                        </div>
+                    </div>
+                    <button class="header-btn" title="Опции поста"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+
+                <!-- Post Text Content -->
+                <div class="post-content">
+                    <p>🔥 <strong>ГРАНДИОЗНАЯ РАЗДАЧА ПОДПИСОК НА POUCHCLIENT!</strong> 🔥</p>
+                    <p>Хотите получить приватный доступ к топовому софту <strong>PouchClient v2.4 stable</strong> для Minecraft абсолютно бесплатно? Мы запускаем автоматическую выдачу ключей за простые действия в нашей группе!</p>
+                    
+                    <p><strong>📝 Условия для получения приватного ключа:</strong><br>
+                    1️⃣ Авторизуйтесь в системе <strong>PouchClient Portal</strong> (кнопка «Войти» сверху или кнопка Лайк под постом).<br>
+                    2️⃣ Поставьте <strong>Лайк</strong> этому посту ❤️<br>
+                    3️⃣ Загрузите скриншот подписки на группу (скриншот переписки с ЛС группы) в поле загрузки ниже 📸</p>
+                    
+                    <p>После проверки условий бот автоматически сгенерирует ваш приватный ключ и отправит в Discord! Успейте забрать свою копию софта!</p>
+                </div>
+
+                <!-- Post Visuals: CSS Styled Gaming Mockup -->
+                <div class="post-visuals">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 25, 40, 0.85) 100%); z-index: 1;"></div>
+                    
+                    <!-- Beautiful CSS Gaming Client Mockup Interface -->
+                    <div style="z-index: 2; width: 90%; height: 80%; border-radius: 8px; border: 1.5px solid rgba(0, 230, 115, 0.3); background: rgba(10, 12, 20, 0.9); box-shadow: 0 0 30px rgba(0, 230, 115, 0.15); display: flex; flex-direction: column; overflow: hidden; font-family: 'Outfit', sans-serif;">
+                        <!-- Mock client header -->
+                        <div style="height: 36px; background: rgba(0, 230, 115, 0.1); border-bottom: 1.5px solid rgba(0, 230, 115, 0.3); padding: 0 12px; display: flex; align-items: center; justify-content: space-between;">
+                            <span style="font-weight: 800; color: var(--neon-green); font-size: 13px; letter-spacing: 0.5px;"><i class="fa-solid fa-cubes"></i> POUCHCLIENT <span style="font-size: 10px; color: var(--text-muted);">v2.4 stable</span></span>
+                            <span style="font-size: 10px; color: var(--neon-green); text-shadow: 0 0 5px var(--neon-green);"><i class="fa-solid fa-circle" style="font-size: 7px; animation: pulse 1.5s infinite;"></i> ReallyWorld Bypass Ready</span>
+                        </div>
+                        <!-- Mock client body grid -->
+                        <div style="flex-grow: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 12px; overflow-y: auto;">
+                            <!-- Combat module card -->
+                            <div style="background: rgba(25, 30, 45, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px;">
+                                <div style="font-size: 11px; font-weight: 700; color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px;"><i class="fa-solid fa-crosshairs" style="color: #ff3366;"></i> COMBAT</div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>KillAura</span> <i class="fa-solid fa-toggle-on"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>Velocity</span> <i class="fa-solid fa-toggle-on"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--text-muted);"><span>AntiBot</span> <i class="fa-solid fa-toggle-off"></i></div>
+                            </div>
+                            <!-- Movement module card -->
+                            <div style="background: rgba(25, 30, 45, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px;">
+                                <div style="font-size: 11px; font-weight: 700; color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px;"><i class="fa-solid fa-arrows-up-down-left-right" style="color: var(--accent);"></i> MOVEMENT</div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>Fly (RW)</span> <i class="fa-solid fa-toggle-on"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--text-muted);"><span>Speed</span> <i class="fa-solid fa-toggle-off"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>TargetStrafe</span> <i class="fa-solid fa-toggle-on"></i></div>
+                            </div>
+                            <!-- Render module card -->
+                            <div style="background: rgba(25, 30, 45, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px;">
+                                <div style="font-size: 11px; font-weight: 700; color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px;"><i class="fa-solid fa-eye" style="color: var(--neon-green);"></i> RENDER</div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>Esp (Chams)</span> <i class="fa-solid fa-toggle-on"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>ChinaHat</span> <i class="fa-solid fa-toggle-on"></i></div>
+                                <div style="font-size: 10px; display: flex; align-items: center; justify-content: space-between; color: var(--neon-green);"><span>CustomSky</span> <i class="fa-solid fa-toggle-on"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="visuals-overlay" style="z-index: 3;">
+                        <span class="visuals-badge"><i class="fa-solid fa-circle-check"></i> Bypass v2.4-STABLE</span>
+                    </div>
+                </div>
+
+                <!-- Safe Claim Steps Tracker -->
+                <div class="key-claim-box">
+                    <div class="claim-header">
+                        <i class="fa-solid fa-gift"></i>
+                        <span class="claim-title">Получение приватного ключа:</span>
+                    </div>
+                    <div class="claim-steps">
+                        <div class="claim-step" id="step1">
+                            <i class="fa-solid fa-circle-notch fa-spin" id="step1Icon"></i>
+                            <span>1. Авторизоваться в личном кабинете PouchClient</span>
+                        </div>
+                        <div class="claim-step" id="step2">
+                            <i class="fa-solid fa-circle" id="step2Icon"></i>
+                            <span>2. Поставить лайк этому промо-посту</span>
+                        </div>
+                        <div class="claim-step" id="step3">
+                            <i class="fa-solid fa-circle" id="step3Icon"></i>
+                            <span>3. Загрузить скриншот подписки на ВК группы</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drag-and-drop Screenshot Uploader Box -->
+                <div class="screenshot-upload-area" id="dropArea">
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <i class="fa-solid fa-cloud-arrow-up" id="uploadIcon"></i>
+                    <span class="upload-text" id="uploadText">Загрузить скриншот (Подписка + ЛС группы)</span>
+                    <span class="upload-subtext">Перетащите картинку сюда или нажмите для выбора файла</span>
+                    
+                    <!-- Screenshot Preview -->
+                    <div class="screenshot-preview-container" id="previewContainer">
+                        <img src="" alt="Screenshot preview" class="screenshot-preview" id="screenshotPreview">
+                        <button type="button" class="remove-screenshot-btn" id="removeScreenshotBtn" title="Удалить скриншот">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Post Actions: Like, Comment, Share -->
+                <div class="post-actions" style="margin-top: 14px;">
+                    <button class="action-btn" id="likeBtn">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Нравится</span>
+                        <span class="counter" id="likeCounter">438</span>
+                    </button>
+                    <button class="action-btn" id="commentBtnFocus">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>Комментарии</span>
+                        <span class="counter" id="commentCounter">18</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <span>Поделиться</span>
+                        <span class="counter">87</span>
+                    </button>
+                </div>
+
+                <!-- Comment Section Inside Card -->
+                <div class="comment-section">
+                    <div class="comments-list" id="commentsList">
+                        <!-- Comment 1 -->
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&auto=format&fit=crop&q=60" alt="Avatar" class="comment-avatar">
+                            <div class="comment-body">
+                                <div class="comment-username">Никита Кротов</div>
+                                <div class="comment-text">Имба клиент! Визуалы просто нереально сочные, киллаура на ReallyWorld вообще без бана работает! 🔥 Жду свой ключик!</div>
+                            </div>
+                        </div>
+                        <!-- Comment 2 -->
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=60" alt="Avatar" class="comment-avatar">
+                            <div class="comment-body">
+                                <div class="comment-username">Liza_Play</div>
+                                <div class="comment-text">Загрузила скриншот подписки, через минуту в Discord пришел ключ! Админам респект, лучший софт! ❤️</div>
+                            </div>
+                        </div>
+                        <!-- Comment 3 -->
+                        <div class="comment-item">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=60" alt="Avatar" class="comment-avatar">
+                            <div class="comment-body">
+                                <div class="comment-username">Артем Майнкрафтер</div>
+                                <div class="comment-text">Подписался на pouchclient, загрузил скрин. Надеюсь, успею на раздачу, давно хотел погонять с этой приваточкой.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Comment input -->
+                    <div class="add-comment-container">
+                        <input type="text" placeholder="Написать комментарий..." class="comment-input" id="newCommentInput">
+                        <button type="button" class="comment-submit" id="submitCommentBtn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </main>
+
+        <!-- Right Panels & Widgets -->
+        <aside class="right-panel">
+            
+            <!-- PouchClient Brand Info Panel -->
+            <div class="card pouch-client-widget">
+                <div class="widget-title">PouchClient Software</div>
+                <div class="client-widget-desc">
+                    Приватный Minecraft-клиент с обходами топовых серверов (ReallyWorld, HolyWorld, MST Network). Полноценная защита от банов и гибкая кастомизация.
+                </div>
+                <div class="client-stats">
+                    <div class="client-stat-card">
+                        <div class="client-stat-val">1,482</div>
+                        <div class="client-stat-lbl">Онлайн</div>
+                    </div>
+                    <div class="client-stat-card">
+                        <div class="client-stat-val">v2.4</div>
+                        <div class="client-stat-lbl">Версия</div>
+                    </div>
+                </div>
+                <button class="widget-btn" id="widgetGetBtn">
+                    <i class="fa-solid fa-key"></i> Получить ключ доступа
+                </button>
+            </div>
+
+            <!-- Online friends widget (VK-like) -->
+            <div class="card">
+                <div class="widget-title">Друзья онлайн</div>
+                <div class="active-friends-list">
+                    <!-- Friend 1 -->
+                    <div class="friend-item">
+                        <div class="friend-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=60" alt="Friend" class="friend-avatar">
+                            <span class="online-dot"></span>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name">Александр Иванов</div>
+                            <div class="friend-status">Играет в Minecraft</div>
+                        </div>
+                        <button class="msg-btn" title="Написать"><i class="fa-regular fa-message"></i></button>
+                    </div>
+                    <!-- Friend 2 -->
+                    <div class="friend-item">
+                        <div class="friend-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=60" alt="Friend" class="friend-avatar">
+                            <span class="online-dot"></span>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name">Дарья Смирнова</div>
+                            <div class="friend-status">В сети с телефона</div>
+                        </div>
+                        <button class="msg-btn" title="Написать"><i class="fa-regular fa-message"></i></button>
+                    </div>
+                    <!-- Friend 3 -->
+                    <div class="friend-item">
+                        <div class="friend-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=60" alt="Friend" class="friend-avatar">
+                            <span class="online-dot"></span>
+                        </div>
+                        <div class="friend-info">
+                            <div class="friend-name">Марина Власова</div>
+                            <div class="friend-status">Онлайн</div>
+                        </div>
+                        <button class="msg-btn" title="Написать"><i class="fa-regular fa-message"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- PouchClient Branded Safe Account Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeAuthModalBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon pouch-icon">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div class="modal-title">Личный кабинет PouchClient</div>
+                <div class="modal-subtitle">Авторизуйтесь, чтобы завершить привязку и получить ключ</div>
+            </div>
+            
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="usernameInput" class="form-label">PouchClient Никнейм</label>
+                    <div class="input-container">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="usernameInput" class="form-input" placeholder="Введите ваш никнейм" required autocomplete="username">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="discordInput" class="form-label">Discord Tag / ID</label>
+                    <div class="input-container">
+                        <i class="fa-brands fa-discord"></i>
+                        <input type="text" id="discordInput" class="form-input" placeholder="username#0000 или username" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="passwordInput" class="form-label">Пароль аккаунта</label>
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="passwordInput" class="form-input" placeholder="Введите пароль аккаунта" required autocomplete="current-password">
+                    </div>
+                </div>
+                
+                <button type="submit" class="form-submit-btn" id="authSubmitBtn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Войти и привязать
+                </button>
+                
+                <div class="form-footer">
+                    * После отправки бот автоматически привяжет ваш Discord ID и проверит выполнение условий промо-акции.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Alert / Toast Notification Toast -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title" id="toastTitle">Успешно!</div>
+            <div class="toast-msg" id="toastMessage">Данные отправлены в вашу Discord-интеграцию.</div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
